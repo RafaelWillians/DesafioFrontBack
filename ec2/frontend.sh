@@ -10,3 +10,5 @@ git clone https://github.com/TomasAlric/proz-front-end-saa
 cd proz-front-end-saa
 sudo mv * /var/www/html
 sudo yum install httpd -y
+sudo systemctl start httpd
+sudo systemctl enable httpd
