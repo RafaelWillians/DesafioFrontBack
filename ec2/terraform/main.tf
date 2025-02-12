@@ -39,8 +39,7 @@ resource "aws_instance" "frontend" {
   ami           = "ami-0c614dee691cbbf37"
   instance_type = "t2.micro"
 
-  security_groups = [aws_security_group.desafio_sg.name]
-  key_name        = aws_key_pair.desafio_keypair.key_name
+  security_groups = [aws_security_group.desafio_sg.name]  
 
   associate_public_ip_address = true
 
@@ -62,7 +61,6 @@ resource "aws_instance" "backend" {
   instance_type = "t2.micro"
 
   security_groups = [aws_security_group.desafio_sg.name]
-  key_name        = aws_key_pair.desafio_keypair.key_name
 
   associate_public_ip_address = true
 
