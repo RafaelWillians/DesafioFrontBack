@@ -55,6 +55,8 @@ resource "aws_instance" "frontend" {
     delete_on_termination = true
   }
 
+  user_data = file("frontend.sh")
+
   tags = {
     Name = "frontend"
   }
@@ -74,6 +76,8 @@ resource "aws_instance" "backend" {
     volume_size           = 20
     delete_on_termination = true
   }
+
+  user_data = file("backend.sh")
 
   tags = {
     Name = "backend"
