@@ -1,8 +1,7 @@
-# AWS Repo Template
+# Desafio Integrar Servidores Front e Backend
 
-Repo template for use with AWS CLI, compatible with Codespaces, GitPod and DevContainer extension (for VSCode).
-
-Template de repositório para usar com AWS CLI, compatível com Codespaces, GitPod e extensão DevContainer (para VSCode).
+## Observações
+* Usar somente subrede pública inicialmente, para testes.
 
 ## Extensões
 * AWS CLI
