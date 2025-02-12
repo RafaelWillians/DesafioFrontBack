@@ -2,11 +2,6 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_key_pair" "desafio_keypair" {
-  key_name   = "keypair-desafio"
-  public_key = file("~/.ssh/id_rsa.pub")
-}
-
 resource "aws_security_group" "desafio_sg" {
   name        = "desafio-sg"
   description = "Habilitar ssh, http e https para anywhere"
